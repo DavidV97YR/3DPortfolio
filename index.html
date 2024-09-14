@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3D Model Viewer</title>
+  <title>3D Art Portfolio</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <style>
@@ -14,32 +14,59 @@
       font-family: 'Roboto', sans-serif; /* Font integration */
       color: #ffffff; /* White text color */
       display: flex;
-      justify-content: center;
+      flex-direction: column; /* Arrange items vertically */
       align-items: center;
+      justify-content: center;
       height: 100vh;
       text-align: center;
     }
 
+    .container {
+      max-width: 1200px;
+      width: 80vw;
+      background-color: #282828;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .header {
+      margin-bottom: 20px;
+    }
+
+    .description {
+      margin-top: 20px;
+    }
+
     model-viewer {
-      width: 80vw;  /* Adjust width as needed */
+      width: 100%;
       height: 60vh; /* Adjust height as needed */
-      max-width: 1200px; /* Maximum width */
-      max-height: 800px; /* Maximum height */
       background-color: #3c3c3c; /* Match the body background color */
     }
 
-    h1, p {
-      color: #ffffff; /* White color for better contrast */
+    a {
+      color: #1e90ff; /* Link color */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>My 3D Art Portfolio</h1>
-  
-  <!-- 3D Model Viewer -->
-  <model-viewer src="KosekiBijou.glb" alt="A 3D model" auto-rotate camera-controls ar>
-  </model-viewer>
-  
-  <p>This is a fan-made 3D model of Koseki Bijou from Hololive English's Advent. The model was created based on the reference sheet shown below. To download and test this model in MMD, please visit <a href="https://3d.nicovideo.jp/works/td91058" target="_blank" rel="noopener noreferrer">this link</a>.</p>
+  <div class="container">
+    <div class="header">
+      <h1>My 3D Art Portfolio</h1>
+    </div>
+    
+    <!-- 3D Model Viewer -->
+    <model-viewer src="KosekiBijou.glb" alt="A 3D model" auto-rotate camera-controls ar>
+    </model-viewer>
+    
+    <div class="description">
+      <p>This is a fan-made 3D model of Koseki Bijou from Hololive English's Advent. The model was created based on the reference sheet shown below. To download and test this model in MMD, please visit <a href="https://3d.nicovideo.jp/works/td91058" target="_blank" rel="noopener noreferrer">this link</a>.</p>
+    </div>
+  </div>
 </body>
 </html>
