@@ -11,6 +11,7 @@
       margin: 0;
       padding: 0;
       height: 100%;
+      overflow: hidden; /* Prevent body from scrolling */
     }
 
     body {
@@ -21,6 +22,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      overflow-y: auto; /* Allow scrolling for body */
     }
 
     .container {
@@ -31,6 +33,7 @@
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       overflow-y: auto; /* Allow vertical scrolling within container */
+      max-height: 90vh; /* Limit container height to allow scrolling */
     }
 
     .header {
