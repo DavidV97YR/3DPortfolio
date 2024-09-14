@@ -6,12 +6,34 @@
   <title>3D Model Viewer</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <style>
+    /* Set the background color of the entire page */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #3c3c3c; /* Match the model-viewer background color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Set the size and background color of the model-viewer */
     model-viewer {
-      width: 80vw;  /* Adjust width */
-      height: 60vh; /* Adjust height */
+      width: 80vw;  /* Adjust width as needed */
+      height: 60vh; /* Adjust height as needed */
       max-width: 1200px; /* Maximum width */
       max-height: 800px; /* Maximum height */
-      background-color: #3c3c3c; /* Background color similar to Blender's grey */
+      background-color: #3c3c3c; /* Match the body background color */
+    }
+
+    h1 {
+      color: #ffffff; /* White color for better contrast */
+      text-align: center;
+    }
+
+    p {
+      color: #ffffff; /* White color for better contrast */
+      text-align: center;
     }
   </style>
 </head>
