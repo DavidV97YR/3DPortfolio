@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3D Model Viewer</title>
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <style>
-    /* Set the background color of the entire page */
     body {
       margin: 0;
       padding: 0;
-      background-color: #3c3c3c; /* Match the model-viewer background color */
+      background-color: #3c3c3c; /* Dark grey background */
+      font-family: 'Roboto', sans-serif; /* Font integration */
+      color: #ffffff; /* White text color */
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
+      text-align: center;
     }
 
-    /* Set the size and background color of the model-viewer */
     model-viewer {
       width: 80vw;  /* Adjust width as needed */
       height: 60vh; /* Adjust height as needed */
@@ -26,14 +28,8 @@
       background-color: #3c3c3c; /* Match the body background color */
     }
 
-    h1 {
+    h1, p {
       color: #ffffff; /* White color for better contrast */
-      text-align: center;
-    }
-
-    p {
-      color: #ffffff; /* White color for better contrast */
-      text-align: center;
     }
   </style>
 </head>
