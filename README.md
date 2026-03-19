@@ -1,57 +1,25 @@
-# hololive-Merch-Archive
+# 3D Art Portfolio
 
-Automated archive of all products from [shop.hololivepro.com](https://shop.hololivepro.com).
+A personal portfolio site showcasing fan-made 3D character models, built with plain HTML/CSS and Google's `model-viewer` for interactive in-browser 3D viewing.
 
-## What this is
+## 🌐 Live Demo
 
-A GitHub Actions scraper runs every 30 minutes and:
-- Fetches the full product catalog from the hololive shop (JP + EN)
-- Archives product images permanently to this repo
-- Records `published_at` (launch date) from the Shopify JSON
-- Marks products as `delisted` if they disappear from the shop
+[davidv97yr.github.io/3DPortfolio](https://davidv97yr.github.io/3DPortfolio/)
 
-## Structure
+## 📁 What's in here
 
-```
-merch.json          ← full product archive (metadata + archived image URLs)
-Products/
-  {product-handle}/
-    original-filename.jpg
-    original-filename.png
-    ...
-```
+- **`index.html`** — the whole site, single file
+- **`Models/`** — `.glb` model files
+- **`Character Reference Sheet/`** — original reference art used during modelling
 
-## merch.json fields
+## Current Models
 
-| Field | Description |
-|---|---|
-| `product_id` | Shopify product ID |
-| `handle` | URL-safe product handle |
-| `title_jp` | Japanese title |
-| `title_en` | English title |
-| `tags_jp` | Shopify tags from JP store |
-| `tags_en` | Shopify tags from EN store |
-| `images` | Archived image URLs (this repo, permanent) |
-| `min_price` | Minimum variant price in JPY |
-| `max_price` | Maximum variant price in JPY |
-| `published_at` | When the product first launched on the shop |
-| `is_available` | Whether any variant is currently purchasable |
-| `delisted_at` | When the product was removed from the shop (null if still listed) |
+| Model | Source | Download |
+|---|---|---|
+| Koseki Bijou | [Hololive EN Advent](https://x.com/kosekibijou) | [NicoNico 3D](https://3d.nicovideo.jp/works/td91058) |
 
-## Using the data
+## Credits
 
-```javascript
-const res = await fetch(
-  'https://raw.githubusercontent.com/YOUR_USERNAME/hololive-Merch-Archive/main/merch.json'
-);
-const merch = await res.json();
-```
-
-## Setup
-
-1. Push this repo to GitHub
-2. Go to **Settings → Actions → General → Workflow permissions** → set to **Read and write**
-3. The scraper runs automatically every 30 minutes
-4. Trigger it manually any time from **Actions → Scrape Hololive Merch → Run workflow**
-
-No secrets or API keys needed — `GITHUB_TOKEN` is provided automatically by GitHub Actions.
+- **Koseki Bijou** character design — [北田 藻 (@428clv)](https://x.com/428clv)
+- Reference sheet — [original tweet](https://twitter.com/kosekibijou/status/1685518453124526080)
+- Koseki Bijou is a talent of [Hololive English](https://hololive.hololivepro.com/en/) / Cover Corp. This is a fan-made project, not affiliated with or endorsed by Cover Corp.
