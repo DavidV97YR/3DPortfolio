@@ -1,10 +1,10 @@
-# 3D Art Portfolio
+# 3D-Portfolio
 
 A personal portfolio site showcasing fan-made 3D character models, built with plain HTML/CSS and Google's `model-viewer` for interactive in-browser 3D viewing.
 
 ## 🌐 Live Demo
 
-[davidv97yr.github.io/3DPortfolio](https://davidv97yr.github.io/3DPortfolio/)
+[davidv97yr.github.io/3D-Portfolio](https://davidv97yr.github.io/3D-Portfolio/)
 
 ## 📁 What's in here
 
