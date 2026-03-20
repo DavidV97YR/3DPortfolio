@@ -16,10 +16,10 @@ A personal portfolio site showcasing fan-made 3D character models, built with pl
 
 | Model | Source | Download |
 |---|---|---|
-| Koseki Bijou | [Hololive EN Advent](https://x.com/kosekibijou) | [NicoNico 3D](https://3d.nicovideo.jp/works/td91058) |
+| Koseki Bijou | [hololive EN Advent](https://x.com/kosekibijou) | [NicoNico 3D](https://3d.nicovideo.jp/works/td91058) |
 
 ## Credits
 
 - **Koseki Bijou** character design — [北田 藻 (@428clv)](https://x.com/428clv)
 - Reference sheet — [original tweet](https://twitter.com/kosekibijou/status/1685518453124526080)
-- Koseki Bijou is a talent of [Hololive English](https://hololive.hololivepro.com/en/) / Cover Corp. This is a fan-made project, not affiliated with or endorsed by Cover Corp.
+- Koseki Bijou is a talent of [hololive English](https://hololive.hololivepro.com/en/) / Cover Corp. This is a fan-made project, not affiliated with or endorsed by Cover Corp.
